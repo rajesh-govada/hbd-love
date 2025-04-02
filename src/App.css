@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+@media (max-width:768px){
+  body{
+    background-image: url("https://raw.githubusercontent.com/rajesh-govada/images/assets/love.JPG");
+    background-repeat:no-repeat; 
+    background-size: contain;
+    background-position: center;
+    color: #14a6d3;  
+    line-height: 200%;
+    margin-top: 0%;
+    margin-bottom: 20%;
+    text-align: center;
+    font-family: "Monaco", monospace;
+  };
+}
+
+@media (min-width:769px){
+  body{
+    background-image: url("https://raw.githubusercontent.com/rajesh-govada/images/assets/promise.JPG");
+    background-repeat:no-repeat;   
+    background-size: cover;
+    background-position: center; 
+    color: #de392d; 
+    line-height: 200%;
+    margin-top: 0%;
+    margin-bottom: 20%;
+    margin-right: 10%;
+    text-align: lest;
+    font-family: "Monaco", monospace;
+  };
 }
 
 .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #cbdddc;
 }
